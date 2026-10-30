@@ -1,0 +1,13 @@
+{
+  "domain": "openrouter_usage",
+  "name": "OpenRouter Usage",
+  "codeowners": [
+    "e-p-s"
+  ],
+  "config_flow": true,
+  "documentation": "https://openrouter.ai/docs/api-reference/limits",
+  "integration_type": "service",
+  "iot_class": "cloud_polling",
+  "requirements": [],
+  "version": "1.0.0"
+}

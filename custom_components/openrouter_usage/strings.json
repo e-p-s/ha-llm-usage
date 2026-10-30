@@ -1,0 +1,25 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "OpenRouter Usage",
+        "description": "OpenRouter API-Key (sk-or-...).",
+        "data": { "api_key": "API-Key" }
+      },
+      "init": {
+        "title": "OpenRouter Usage konfigurieren",
+        "description": "API-Key ändern.",
+        "data": { "api_key": "API-Key" }
+      }
+    },
+    "error": { "invalid_key": "Schlüssel abgelehnt (Credits-Endpoint)." },
+    "abort": { "already_configured": "OpenRouter Usage ist bereits eingerichtet." }
+  },
+  "entity": {
+    "sensor": {
+      "guthaben": { "name": "Guthaben" },
+      "verbrauch_gesamt": { "name": "Verbrauch gesamt" },
+      "key_verbrauch_monat": { "name": "Key-Verbrauch (Monat)" }
+    }
+  }
+}
