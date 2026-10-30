@@ -49,6 +49,14 @@ Die History startet nach der Installation bei null; nach 1–2 Stunden sind alle
 4. API-Key eintragen, fertig. Der Key ist danach jederzeit über das Zahnrad der Integration („Konfigurieren“) änderbar.
 
 ### Variante B — HACS (Custom Repository)
+
+MiniMax: [![Open in HACS](https://my.home-assistant.io/badges/hacs_repository.svg)](https://my.home-assistant.io/redirect/hacs_repository/?owner=e-p-s&repository=ha-minimax-usage&category=integration)
+OpenRouter: [![Open in HACS](https://my.home-assistant.io/badges/hacs_repository.svg)](https://my.home-assistant.io/redirect/hacs_repository/?owner=e-p-s&repository=ha-openrouter-usage&category=integration)
+
+Nach der Installation — Integration direkt hinzufügen:
+[![Add Integration](https://my.home-assistant.io/badges/config_flow_start.svg)](https://my.home-assistant.io/redirect/config_flow_start/?domain=minimax_usage)
+[![Add Integration](https://my.home-assistant.io/badges/config_flow_start.svg)](https://my.home-assistant.io/redirect/config_flow_start/?domain=openrouter_usage)
+
 Voraussetzung: HACS ist installiert.
 
 > **Wichtig:** HACS erwartet pro Repository genau **eine** Integration. Für HACS die jeweiligen Einzel-Repos verwenden (`ha-minimax-usage` bzw. `ha-openrouter-usage`), nicht das All-in-One-Repo.
