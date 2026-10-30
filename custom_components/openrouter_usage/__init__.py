@@ -7,6 +7,7 @@ from homeassistant.config_entries import ConfigEntry
 from homeassistant.const import Platform
 from homeassistant.helpers.config_validation import empty_config_schema
 from homeassistant.core import HomeAssistant
+from homeassistant.helpers import translation as translation_helper
 
 from .const import CONF_API_KEY, DOMAIN
 from .coordinator import OpenRouterUsageCoordinator
@@ -41,6 +42,11 @@ async def async_setup_entry(
 ) -> bool:
     """Set up OpenRouter Usage from a config entry."""
     coordinator = OpenRouterUsageCoordinator(hass, _resolved_key(entry))
+    # Device names resolve from translations at device-registration time —
+    # preload so a cold start does not persist the raw translation key.
+    await translation_helper.async_get_translations(
+        hass, hass.config.language, "device", {DOMAIN}
+    )
     await coordinator.async_load_history()
     await coordinator.async_config_entry_first_refresh()
 

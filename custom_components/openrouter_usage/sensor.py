@@ -57,7 +57,7 @@ class OpenRouterCreditSensor(CoordinatorEntity[OpenRouterUsageCoordinator], Sens
         self._attr_suggested_object_id = f"openrouter_{kind}"
         self._attr_device_info = {
             "identifiers": {(DOMAIN, entry.entry_id)},
-            "name": "OpenRouter",
+            "translation_key": "account",
             "manufacturer": "OpenRouter",
             "configuration_url": "https://openrouter.ai/settings/credits",
         }

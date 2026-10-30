@@ -1,11 +1,14 @@
 {
     "domain": "openrouter_usage",
     "name": "OpenRouter Usage",
-    "codeowners": [],
+    "codeowners": [
+        "@e-p-s"
+    ],
     "config_flow": true,
     "documentation": "https://openrouter.ai/docs/api-reference/limits",
     "integration_type": "service",
     "iot_class": "cloud_polling",
+    "issue_tracker": "https://github.com/e-p-s/ha-openrouter-usage/issues",
     "requirements": [],
-    "version": "1.0.2"
+    "version": "1.1.0"
 }

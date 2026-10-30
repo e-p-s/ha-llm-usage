@@ -5,15 +5,23 @@
         "title": "OpenRouter Usage",
         "description": "OpenRouter API key (sk-or-...).",
         "data": { "api_key": "API key" }
-      },
+      }
+    },
+    "error": { "invalid_key": "Key rejected (credits endpoint)." },
+    "abort": { "already_configured": "OpenRouter Usage is already configured." }
+  },
+  "options": {
+    "step": {
       "init": {
         "title": "Configure OpenRouter Usage",
         "description": "Change the API key.",
         "data": { "api_key": "API key" }
       }
     },
-    "error": { "invalid_key": "Key rejected (credits endpoint)." },
-    "abort": { "already_configured": "OpenRouter Usage is already configured." }
+    "error": { "invalid_key": "Key rejected (credits endpoint)." }
+  },
+  "device": {
+    "account": { "name": "OpenRouter" }
   },
   "entity": {
     "sensor": {
