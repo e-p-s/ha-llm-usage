@@ -5,6 +5,7 @@ import logging
 
 from homeassistant.config_entries import ConfigEntry
 from homeassistant.const import Platform
+from homeassistant.helpers.config_validation import empty_config_schema
 from homeassistant.core import HomeAssistant
 
 from .const import CONF_API_KEY, DOMAIN
@@ -20,6 +21,9 @@ type OpenRouterUsageConfigEntry = ConfigEntry[OpenRouterUsageCoordinator]
 def _resolved_key(entry: ConfigEntry) -> str:
     """API key from options (UI-editable) with fallback to initial data."""
     return entry.options.get(CONF_API_KEY) or entry.data[CONF_API_KEY]
+
+
+CONFIG_SCHEMA = empty_config_schema(DOMAIN)
 
 
 async def async_setup(hass: HomeAssistant, config: dict) -> bool:
