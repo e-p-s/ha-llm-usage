@@ -31,6 +31,10 @@ Hinweis: Die Video-Gruppe liefert von der API nur ein 24h-Tagesfenster statt ein
 | Key-Verbrauch (Monat) | USD | monatlicher Verbrauch des Keys |
 | Verbrauch letzte Stunde / 2 Std. / 24 Std. | USD | Delta über rollierende Fenster |
 
+![MiniMax Usage](https://raw.githubusercontent.com/e-p-s/ha-minimax-usage/main/images/preview.png)
+
+![OpenRouter Usage](https://raw.githubusercontent.com/e-p-s/ha-openrouter-usage/main/images/preview.png)
+
 ## Funktionsweise der Delta-Sensoren
 
 Jeder Poll wird als Sample in einer 48-Stunden-History persistiert (`.storage/minimax_usage.samples` bzw. `.storage/openrouter_usage.samples`, private Dateien). Deltas werden aus den Differenzen der Samples berechnet:
